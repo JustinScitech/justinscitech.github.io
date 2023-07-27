@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sapling
+* source:	https://sketchfab.com/3d-models/sapling-b1681d058b4c4d348e058299a1b1bd52
+* author:	BunnyGame (https://sketchfab.com/bunnyGame)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sapling" (https://sketchfab.com/3d-models/sapling-b1681d058b4c4d348e058299a1b1bd52) by BunnyGame (https://sketchfab.com/bunnyGame) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

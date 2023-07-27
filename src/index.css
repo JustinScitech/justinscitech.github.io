@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+
+
+.hash-span {
+  margin-top: 0px;
+  padding-bottom: 80px;
+  display: block;
+}
+
+.black-gradient {
+  background: #111111;
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #111111
+  );
+  background: linear-gradient(
+    to right,
+    #434343,
+    #111111
+  );
+}
+
+.white-gradient {
+  background: #ffffff;
+  background: linear-gradient(-75deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(
+    -75deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.violet-gradient {
+  background: #904dee;
+  background: linear-gradient(-75deg, #904dee 0%, rgba(70, 61, 90, 0) 100%);
+  background: -webkit-linear-gradient(
+    -75deg,
+    #904dee 0%,
+    rgba(70, 61, 90, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#10d0a8";
+  background: linear-gradient(85.13deg, #10d0a8 2.9%, #cf71ff 97.5%);
+  background: -webkit-linear-gradient(-85.13deg, #10d0a8 2.9%, #cf71ff 97.5%);
+}
+
+.orange-text-gradient {
+  background: #f32711; 
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f32711,
+    #f6bf19
+  );
+  background: linear-gradient(
+    to bottom,
+    #f32711,
+    #f6bf19
+  ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #12998e;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #12998e,
+    #48ef8d
+  );
+  background: linear-gradient(
+    to bottom,
+    #12998e,
+    #48ef8d
+  ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  background: #66ccf2;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #3f80ed,
+    #66ccf2
+  );
+  background: linear-gradient(
+    to bottom,
+    #3f80ed,
+    #66ccf2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ed008d;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ed008d,
+    #fc7767
+  );
+  background: linear-gradient(
+    to bottom,
+    #ed008d,
+    #fc7767
+  ); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.2s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.8em 0em 0em #ffffff,
+      1.9em -1.9em 0 0em rgba(255, 255, 255, 0.2),
+      2.7em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.85em 1.85em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.7em 0 0em rgba(255, 255, 255, 0.2),
+      -1.9em 1.9em 0 0em rgba(255, 255, 255, 0.2),
+      -2.8em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.9em -1.9em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  /* ... Rest of keyframes ... */
+}

@@ -1,0 +1,59 @@
+.navbar {
+  position: absolute;  
+  z-index: 9999;    
+}
+
+.tiltCard::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(to bottom, rgb(8, 0, 61), rgb(19, 19, 197));
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.cardContent {
+  padding: 90px;
+  border-radius: 20px;
+  background-color: rgb(8, 0, 61);
+  color: #6a8faf;
+  height: 100%;
+  z-index: -1;
+}
+
+.responsive-text {
+  font-size: 2vw; /* adjust as needed */
+  text-align: center;
+  color: white;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .cardContent {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardContent {
+    padding: 20px;
+  }
+
+  .responsive-text {
+    font-size: 4vw; /* adjust as needed */
+    z-index: 0;
+  }
+}
+.skill-img {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.project-img-rounded {
+  border-radius: 10px;
+}
+

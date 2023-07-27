@@ -1,0 +1,11 @@
+Model Information:
+* title:	Little Chestnut
+* source:	https://sketchfab.com/3d-models/little-chestnut-38a428cff1ba46d98b477d876a7624ba
+* author:	Dasha Klyusova (https://sketchfab.com/AnoFail)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Little Chestnut" (https://sketchfab.com/3d-models/little-chestnut-38a428cff1ba46d98b477d876a7624ba) by Dasha Klyusova (https://sketchfab.com/AnoFail) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
