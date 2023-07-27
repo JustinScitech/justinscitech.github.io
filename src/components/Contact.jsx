@@ -19,7 +19,8 @@ const Contact = () => {
 
     return (
         <Element name="contact">
-            <section className="relative w-full h-screen mx-auto bg-primary rounded" style={{ margin: 0, padding: 0 }}>
+            <section className="relative w-full mx-auto bg-primary rounded" style={{ margin: 0, padding: 0 }}>
+
                 <div >
                     <div className="items-center justify-center">
                         <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white z-0 bg-transparent text-center">Feel free to <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent z-0">
@@ -36,9 +37,12 @@ const Contact = () => {
                                 className="px-6 py-3 text-white font-bold text-xl bg-blue-500 rounded-lg shadow hover:bg-blue-700 transition-colors duration-300"
                             >
                                 Contact Me
-                            </a>
-                        </div>
 
+                            </a>
+
+                        </div>
+                        <div className="pt-20">
+                        </div>
                     </div>
                 </div>
             </section >

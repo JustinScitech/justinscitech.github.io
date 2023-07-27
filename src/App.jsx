@@ -32,7 +32,7 @@ const App = () => {
           <div className="pt-20 z-0"><Experience /></div>
           <div className="pt-10 relative bg-primary"><Projects /></div>
         </div>
-        <div className="pt-20 relative bg-primary">
+        <div className="pt-10 relative bg-primary">
           <Contact />
         </div>
         <Footer />
