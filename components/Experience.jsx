@@ -40,7 +40,7 @@ const Experience = () => {
                     icon={<DirectionsBoat />}
                 >
                     <h3 className="vertical-timeline-element-title">VR Software Developer</h3>
-                    <a target="_blank" href="https://ca.linkedin.com/company/bcs-automation-ltd" className="vertical-timeline-element-subtitle">BCS Automation, Belleville, ON</a>
+                    <a target="_blank" href="https://bcsautomation.ca/" className="vertical-timeline-element-subtitle">BCS Automation, Belleville, ON</a>
                     <p>
                         Developed frontend (Lua, VR) and backend (ASP.NET CORE, RESTful APIs, sockets) for Canada's new HoloShip platform aimed at making a digital twin for the OOSV.
                     </p>
