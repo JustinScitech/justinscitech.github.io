@@ -65,7 +65,7 @@ function About() {
         </h1>
         <div className="flex justify-center">
           <p className="pt-8 text-2xl text-white text-center place-content-center max-w-4xl">
-            The are some skills that I've learned from working in previous <></>
+            These are some skills that I've learned from working in previous <></>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
               engineering internships
             </span> <></>
