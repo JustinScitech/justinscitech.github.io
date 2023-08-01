@@ -38,8 +38,7 @@ function About() {
             and firmware development. I'm especially excited about virtual reality and the <></>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
               metaverse
-            </span>.
-            I'm also passionate about learning new languages and frameworks!
+            </span>. I'm also passionate about learning new languages and frameworks!
           </p>
           <h1 className="pt-8 text-2xl font-light text-white text-left">
             <a href={resume}
@@ -65,14 +64,12 @@ function About() {
         </h1>
         <div className="flex justify-center">
           <p className="pt-8 text-2xl text-white text-center place-content-center max-w-4xl">
-            These are some skills that I've learned from working in previous <></>
+            Have a look at some skills that I've acquired from working in previous <></>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
               engineering internships
             </span> <></>
-            and producing <></>
-            <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-              technical side projects
-            </span>.
+            and <></>
+            <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">projects</span>.
           </p>
         </div>
 

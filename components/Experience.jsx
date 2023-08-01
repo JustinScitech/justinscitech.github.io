@@ -25,7 +25,7 @@ const Experience = () => {
 
             <div className="flex justify-center">
                 <p className="pt-8 text-2xl text-white text-center place-content-center max-w-4xl">
-                    Acquiring Industry Skills at Impactful Businesses
+                    Acquiring Industry Skills at Impactful Companies
                 </p>
             </div>
 
@@ -42,7 +42,7 @@ const Experience = () => {
                     <h3 className="vertical-timeline-element-title">VR Software Developer</h3>
                     <a target="_blank" href="https://bcsautomation.ca/" className="vertical-timeline-element-subtitle">BCS Automation, Belleville, ON</a>
                     <p>
-                        Developed frontend (Lua, VR) and backend (ASP.NET CORE, RESTful APIs, sockets) for Canada's new HoloShip platform aimed at making a digital twin for the OOSV.
+                        Developed the frontend (Lua, VR) and backend (ASP.NET CORE, RESTful APIs, sockets) for Canada's new HoloShip platform aimed at making a digital twin for the OOSV.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
