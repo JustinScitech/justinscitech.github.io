@@ -8,7 +8,6 @@ export default class Footer extends Component {
                 <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div class="sm:flex sm:items-center sm:justify-between">
                         <a href="https://jlau.tech" class="flex items-center mb-4 sm:mb-0">
-                            <img src={justin} class="h-8 mr-3" alt="Justin Lau" />
                             <span class="self-center text-2xl font-light whitespace-nowrap dark:text-white">Jlau</span>
                         </a>
                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -24,7 +23,7 @@ export default class Footer extends Component {
                         </ul>
                     </div>
                     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://www.youtube.com/@jlau04/videos" class="hover:underline">Made by Justin Lau </a>.</span>
+                    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="https://www.youtube.com/@jlau04/videos" class="hover:underline">Made by Justin Lau</a></span>
                 </div>
             </footer>
 
