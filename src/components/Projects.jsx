@@ -4,7 +4,7 @@ import { Element } from 'react-scroll';
 import { useSpring, animated } from 'react-spring';
 import project1 from '../assets/intellipaint.png';
 import project2 from '../assets/facelock.jpg';
-import project3 from '../assets/roombuddy.png';
+import project3 from '../assets/readright.png';
 import project4 from '../assets/jjk.png';
 import '../App.css';
 
@@ -80,14 +80,14 @@ const Projects = () => {
                 </Tilt>
                 <Tilt className="my-4" options={{ max: 25, scale: 1.01 }}>
                     <div className="mt-6 w-full md:w-96 block rounded-lg shadow-lg overflow-hidden mx-0">
-                        <a href="https://github.com/JustinScitech/RoomBuddy" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/JustinScitech/ReadRight" target="_blank" rel="noopener noreferrer">
                             <div className="relative h-56">
-                                <img src={project3} alt="IntelliPaint" className="object-cover w-full h-full" />
+                                <img src={project3} alt="ReadRight" className="object-cover w-full h-full" />
                             </div>
                             <div className="px-6 py-4">
-                                <div className="font-bold text-xl mb-2">RoomBuddy</div>
+                                <div className="font-bold text-xl mb-2">ReadRight</div>
                                 <p className="text-gray-700 text-base">
-                                    RoomBuddy aims to help people find roommates and subletters similar to them!
+                                    ReadRight aims to help people with dyslexia and reading disabilities to read more effectively. This won best the project award for Hack the 6ix 2023!
                                 </p>
                             </div>
                             <div className="px-6 pt-4 pb-2">
@@ -107,7 +107,7 @@ const Projects = () => {
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2">JJK King Of Curses</div>
                                 <p className="text-gray-700 text-base">
-                                    JJK is a combat style 3D game that allows players to enjoy an immersive mystical adventure world set in Japan.
+                                    JJK is a combat style 3D game that allows players to enjoy an immersive mystical adventure world set in Japan. This has 100k+ plays and 1000+ sales!
                                 </p>
                             </div>
                             <div className="px-6 pt-4 pb-2">
