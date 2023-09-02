@@ -41,11 +41,9 @@ const ThreeDim = () => {
         <section className="relative w-full h-screen mx-auto bg-transparent" style={{ margin: 0, padding: 0 }}>
 
             <div className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto flex flex-col items-center gap-5`}>
-                <h1 className="text-8xl font-bold text-white">
-                    Hello, I'm
-                    <span> </span>
-                    <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-                        Justin!
+                <h1 className="text-8xl font-bold">
+                    <span className="gradient bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    Hello, I'm Justin!
                     </span>
                 </h1>
                 <h2 className="text-4xl font-medium text-white mt-10">

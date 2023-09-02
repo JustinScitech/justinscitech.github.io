@@ -1,6 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { FaShip , FaGamepad, FaHospital, FaUser} from "react-icons/fa"
 
 const Experience = () => {
     return (
@@ -33,7 +34,7 @@ const Experience = () => {
                     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 0, 61)' }}
                     date="May 2023 - present"
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
-                // icon={<DirectionsBoat />}
+                icon={<FaShip  />}
                 >
                     <h3 className="vertical-timeline-element-title">VR Software Developer</h3>
                     <a target="_blank" href="https://ca.linkedin.com/company/bcs-automation-ltd" className="vertical-timeline-element-subtitle">BCS Automation, Belleville, ON</a>
@@ -47,7 +48,7 @@ const Experience = () => {
                     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 0, 61)' }}
                     date="Nov 2020 - Jun 2022"
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
-                // icon={<GamepadIcon />}
+                icon={<FaGamepad />}
                 >
                     <h3 className="vertical-timeline-element-title">Lead Game Developer</h3>
                     <a target="_blank" href="https://www.linkedin.com/company/legionstudios/" className="vertical-timeline-element-subtitle">Legion Studios, Toronto, ON</a>
@@ -61,7 +62,7 @@ const Experience = () => {
                     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 0, 61)' }}
                     date="Jun 2021 - Aug 2021"
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
-                // icon={<HealingIcon />}
+                icon={<FaHospital />}
                 >
                     <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
                     <a target="_blank" href="https://healthsmart.ai" className="vertical-timeline-element-subtitle">HealthSmart.ai, Toronto, ON</a>
@@ -75,7 +76,7 @@ const Experience = () => {
                     contentArrowStyle={{ borderRight: '7px solid  rgb(8, 0, 61)' }}
                     date="Sep 2020 - Jun 2021"
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
-                // icon={<PeopleAltIcon />}
+                icon={<FaUser />}
                 >
                     <h3 className="vertical-timeline-element-title">Lead Organizer</h3>
                     <a target="_blank" href="https://lighthousehacks.ca" className="vertical-timeline-element-subtitle">LighthouseHacks.ca, Mississauga, ON</a>
