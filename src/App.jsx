@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ThreeDim from './components/ThreeDim';
 import Footer from './components/Footer';
+import Awards from './components/Awards';
 
 const App = () => {
   const fade = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, delay: 800 });
@@ -31,6 +32,9 @@ const App = () => {
           <div className="pt-20 z-0"><Skills /></div>
           <div className="pt-20 z-0"><Experience /></div>
           <div className="pt-10 relative bg-primary"><Projects /></div>
+        </div>
+        <div className="pt-10 relative bg-primary">
+          <Awards />
         </div>
         <div className="pt-10 relative bg-primary">
           <Contact />
