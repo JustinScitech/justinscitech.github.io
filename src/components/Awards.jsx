@@ -10,7 +10,7 @@ const Awards = () => {
                 Check out some
                 <span> </span>
                 <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-                    wards
+                    awards
                 </span>
                 <span> </span>
                 I've
