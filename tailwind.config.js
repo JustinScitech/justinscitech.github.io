@@ -30,9 +30,9 @@
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
-        topbg: "url('/src/assets/animebg.jpg')",
-      },
+      // backgroundImage: {
+      //   topbg: "url('/src/assets/animebg.jpg')",
+      // },
     },
   },
   variants: {

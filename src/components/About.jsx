@@ -1,10 +1,11 @@
 import React from "react";
-import { styles } from "../styles";
-import { Tilt } from "react-tilt";
 import '../App.css';
 import { Element } from 'react-scroll';
 import resume from '../assets/JustinResume.pdf';
 import justin from '../assets/justin.jpg';
+import { FaLinkedinIn , FaGithub, FaYoutube} from "react-icons/fa"
+import { useSpring, animated } from 'react-spring';
+import {motion} from 'framer-motion';
 function About() {
   const cards = [
     { name: "Web Development" },
@@ -13,19 +14,46 @@ function About() {
     { name: "Game development" }
   ];
 
+  const styles = useSpring({
+    loop: true,
+    to: [
+        { y: 0 },
+        {  y: -20 },
+        { y: 0 }
+    ],
+    from: { y: 0 },
+    config: { duration: 2000 },
+});
+
+const bounce = {
+  whileHover: { scale: 1.1, transition: { type: 'spring', stiffness: 300 } }
+};
+
+
   return (
     <Element name="about">
-      <section className="px-20 pt-20 bg-primary relative w-full h-screen mx-auto flex md:flex-row flex-col items-center justify-between overflow-auto">
+      <section className="px-20 pt-20 bg-primary relative w-full h-screen mx-auto flex md:flex-row flex-col items-center justify-between">
 
 
         <div>
-          <h1 className="text-6xl font-bold text-white">
+        <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
+
+          <h1 className="text-6xl pt-20 font-bold text-white">
             A little bit
             <span> </span>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent z-0">
               about me.
             </span>
           </h1>
+          </motion.div>
+          
+          <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
           <p className="pt-8 text-2xl text-white whitespace-normal w-full md:w-4/6">
             I am an avid learner studying Computer Engineering at the University of Waterloo. I'm interested in the realm of <></>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
@@ -37,6 +65,61 @@ function About() {
             </span>.
             I'm also passionate about learning new languages and frameworks!
           </p>
+          </motion.div>
+          
+          <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
+
+          <div className= "mx-auto flex flex-row items-center relative gap-x-12 pt-4">
+          <motion.div
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    {...bounce}>
+                      <a href= "https://www.linkedin.com/in/jlau04/" target="_blank">
+          <button >
+            <FaLinkedinIn size={30}/></button></a>
+          </motion.div>
+          <motion.div
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    {...bounce}>
+          <a href= "https://github.com/JustinScitech" target="_blank">
+          <button><FaGithub size={30}/></button></a>
+          </motion.div> 
+          
+          <motion.div
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    {...bounce}>
+                      <a href= "https://www.youtube.com/@jlau04/" target="_blank">
+          <button> <FaYoutube size={30}/> </button></a>
+          </motion.div>
+          </div>
+          </motion.div>
+          <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+>
           <h1 className="pt-8 text-2xl font-light text-white text-left">
             <a href={resume}
               target="_blank"
@@ -45,56 +128,15 @@ function About() {
               See my resume
             </a>
           </h1>
+          </motion.div>
         </div>
+        
         <div className="flex-shrink-0 w-2/6">
-          <img className="w-full h-auto object-cover project-img-rounded" src={justin} alt="Justin" />
+          <animated.img style={styles} className="w-full h-auto object-cover project-img-rounded" src={justin} alt="Justin" />
         </div>
+        
       </section>
-
-      <section>
-        <h1 className="pt-20 text-6xl font-bold text-white text-center">
-          My
-          <span> </span>
-          <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-            Skills
-          </span>
-        </h1>
-        <div className="flex justify-center">
-          <p className="pt-8 text-2xl text-white text-center place-content-center max-w-4xl">
-            These are some skills that I've learned from working in previous <></>
-            <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-              engineering internships
-            </span> <></>
-            and producing <></>
-            <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
-              technical side projects
-            </span>.
-          </p>
-        </div>
-
-        <div className="pt-10 flex grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 flex-wrap justify-center gap-5">
-          {cards.map((card, index) => {
-            return (
-              <Tilt key={index} className="m-4" options={{
-                reverse: false,  // reverse the tilt direction
-                max: 35,     // max tilt rotation (degrees)
-                perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
-                scale: 1.01,    // 2 = 200%, 1.5 = 150%, etc..
-                speed: 2000,   // Speed of the enter/exit transition
-                transition: true,   // Set a transition on enter/exit.
-                axis: null,   // What axis should be disabled. Can be X or Y.
-                reset: true,    // If the tilt effect has to be reset on exit.
-                easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-              }}>
-                <div className="cardContent flex items-center justify-center flex-col">
-                  {card.icon}
-                  <p className="responsive-text whitespace-normal">{card.name}</p>
-                </div>
-              </Tilt>
-            );
-          })}
-        </div>
-      </section>
+      
     </Element>
   );
 }

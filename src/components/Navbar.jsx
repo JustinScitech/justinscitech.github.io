@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -10,6 +11,9 @@ const Navbar = () => {
     { id: "projects", title: "Projects" },
     { id: "contact", title: "Contact" },
   ];
+  const bounce = {
+    whileHover: { scale: 1.25, transition: { type: 'ease', stiffness: 300 } }
+  };
 
   return (
     <nav className="flex items-center justify-between py-5 px-4 sm:px-8 lg:px-16 w-full fixed top-0 bg-primary z-9999">
@@ -21,8 +25,17 @@ const Navbar = () => {
 
       <ul className="hidden sm:flex flex-row space-x-4 md:space-x-10 z-9999">
         {navLinks.map((link) => (
+          <motion.div
+          key={link.id}
+          borderRadius="lg" 
+          overflow="hidden" 
+          boxShadow="lg"
+          initial="hidden"
+          animate="visible"
+          align="center"
+          {...bounce}>
           <li
-            key={link.id}
+            
             className={`${active === link.title
               ? "text-secondary"
               : "text-white"
@@ -40,6 +53,7 @@ const Navbar = () => {
               {link.title}
             </Link>
           </li>
+          </motion.div>
         ))}
       </ul>
 
@@ -55,13 +69,23 @@ const Navbar = () => {
         <div className={`overflow-hidden transition-all duration-500 ease-in-out transform ${!toggle ? 'translate-y-full h-0 opacity-0' : 'translate-y-0 h-auto opacity-100'} p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl`}>
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
+              <motion.div
+              key={link.id}
+              borderRadius="lg" 
+              overflow="hidden" 
+              boxShadow="lg"
+              initial="hidden"
+              animate="visible"
+              align="center"
+              {...bounce}>
               <li
-                key={link.id}
+                
                 className={`${active === link.title
                   ? "text-secondary"
                   : "text-tertiary"
                   } font-poppins text-base sm:text-lg font-medium cursor-pointer`}
               >
+                
                 <Link
                   activeClass="active"
                   to={link.id}
@@ -76,7 +100,9 @@ const Navbar = () => {
                 >
                   {link.title}
                 </Link>
+                
               </li>
+              </motion.div>
 
             ))}
           </ul>

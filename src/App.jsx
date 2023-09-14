@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
@@ -14,10 +13,8 @@ import Footer from './components/Footer';
 import Awards from './components/Awards';
 
 const App = () => {
-  const fade = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, delay: 800 });
-
   return (
-    <animated.div style={fade}>
+
       <BrowserRouter>
         <div className="relative bg-primary">
           <div className='bg-topbg bg-cover bg-no-repeat bg-center'>
@@ -29,9 +26,9 @@ const App = () => {
         </div>
         <div className="relative bg-primary">
           <About />
-          <div className="pt-20 z-0"><Skills /></div>
-          <div className="pt-20 z-0"><Experience /></div>
-          <div className="pt-10 relative bg-primary"><Projects /></div>
+          <div className="sm:pt-10 z-0"><Skills /></div>
+          <div className="z-0"><Experience /></div>
+          <div className="relative bg-primary"><Projects /></div>
         </div>
         <div className="pt-10 relative bg-primary">
           <Awards />
@@ -41,7 +38,6 @@ const App = () => {
         </div>
         <Footer />
       </BrowserRouter>
-    </animated.div>
   );
 }
 

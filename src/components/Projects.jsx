@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tilt } from 'react-tilt';
+import {motion} from 'framer-motion';
 import { Element } from 'react-scroll';
 import { useSpring, animated } from 'react-spring';
 import project1 from '../assets/intellipaint.png';
@@ -7,6 +8,8 @@ import project2 from '../assets/facelock.jpg';
 import project3 from '../assets/readright.png';
 import project4 from '../assets/jjk.png';
 import '../App.css';
+
+
 
 const Projects = () => {
     const animation = useSpring({
@@ -20,10 +23,26 @@ const Projects = () => {
         },
         config: { duration: 2000 },
     });
+    const bounce = {
+        whileHover: { scale: 1.025, transition: { type: 'spring', stiffness: 300 } }
+      };
+
+      const slideInFromBottom = {
+        hidden: { y: 100, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            type: 'spring',
+            stiffness: 30,
+            damping: 20
+          }
+        }
+      };
 
     return (
         <Element name="projects">
-            <h1 className="pt-10 text-6xl font-bold text-white text-center">
+            <h1 className="sm:pt-10 lg:pt-0 text-6xl font-bold text-white text-center">
                 See some of my
                 <span> </span>
                 <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
@@ -38,7 +57,19 @@ const Projects = () => {
             </div>
             <div className="pt-13 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-x-0 justify-items-center mx-auto max-w-screen-lg">
 
-                <Tilt className="my-4" options={{ max: 25, scale: 1.01 }}>
+            <motion.div
+          
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    variants={slideInFromBottom}
+                    {...bounce}
+                >
                     <div className="mt-6 w-full md:w-96 block rounded-lg shadow-lg overflow-hidden mx-0">
                         <a href="https://github.com/JustinScitech/IntelliPaint" target="_blank" rel="noopener noreferrer">
                             <div className="relative h-56">
@@ -57,8 +88,21 @@ const Projects = () => {
                             </div>
                         </a>
                     </div>
-                </Tilt>
-                <Tilt className="my-4" options={{ max: 25, scale: 1.01 }}>
+                </motion.div>
+                <motion.div
+          
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    variants={slideInFromBottom}
+                    {...bounce}
+                >
+
                     <div className="mt-6 w-full md:w-96 block rounded-lg shadow-lg overflow-hidden mx-0">
                         <a href="https://github.com/Nadish-Madadi/FaceLock" target="_blank" rel="noopener noreferrer">
                             <div className="relative h-56">
@@ -77,8 +121,21 @@ const Projects = () => {
                             </div>
                         </a>
                     </div>
-                </Tilt>
-                <Tilt className="my-4" options={{ max: 25, scale: 1.01 }}>
+                    </motion.div>
+                    <motion.div
+  
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    variants={slideInFromBottom}
+                    {...bounce}
+                >
+                
                     <div className="mt-6 w-full md:w-96 block rounded-lg shadow-lg overflow-hidden mx-0">
                         <a href="https://github.com/JustinScitech/ReadRight" target="_blank" rel="noopener noreferrer">
                             <div className="relative h-56">
@@ -96,9 +153,20 @@ const Projects = () => {
                                 </button>
                             </div>
                         </a>
-                    </div>
-                </Tilt>
-                <Tilt className="my-4" options={{ max: 25, scale: 1.01 }}>
+                    </div></motion.div>
+                    <motion.div
+
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    variants={slideInFromBottom}
+                    {...bounce}
+                >
                     <div className="mt-6 w-full md:w-96 block rounded-lg shadow-lg overflow-hidden mx-0">
                         <a href="https://www.linkedin.com/company/legionstudios/" target="_blank" rel="noopener noreferrer">
                             <div className="relative h-56">
@@ -117,7 +185,7 @@ const Projects = () => {
                             </div>
                         </a>
                     </div>
-                </Tilt>
+                    </motion.div>
             </div>
         </Element>
     );
