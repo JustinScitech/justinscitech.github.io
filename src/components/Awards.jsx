@@ -49,7 +49,7 @@ const Awards = () => {
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
                 icon={<FaMedal  />}
                 >
-                    <h3 className="vertical-timeline-element-title">Hack The 6ix Best Winner</h3>
+                    <h3 className="vertical-timeline-element-title">Hack The 6ix Winner</h3>
                     <p>
                         Won Hack The 6ix, Toronto's largest summer hackathon, for developing ReadRight, a project to aid students with dyslexia.
                     </p>
