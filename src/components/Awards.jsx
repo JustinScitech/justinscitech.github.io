@@ -28,6 +28,19 @@ const Awards = () => {
 
 
             <VerticalTimeline layout="2-columns">
+            <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'rgb(8, 0, 61)', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(8, 0, 61)' }}
+                    date="September 2023"
+                    iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
+                icon={<FaMedal  />}
+                >
+                    <h3 className="vertical-timeline-element-title">Hack the North Winner</h3>
+                    <p>
+                        Won two award categories for Hack The North, Canada's hackathon. We developed DAG, a project to aid ML developers with getting datasets via crowdsourcing.
+                    </p>
+                </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'rgb(8, 0, 61)', color: '#fff' }}
@@ -36,7 +49,7 @@ const Awards = () => {
                     iconStyle={{ background: 'rgb(19, 6, 100)', color: '#fff' }}
                 icon={<FaMedal  />}
                 >
-                    <h3 className="vertical-timeline-element-title">Hack The 6ix Best Project Award</h3>
+                    <h3 className="vertical-timeline-element-title">Hack The 6ix Best Winner</h3>
                     <p>
                         Won Hack The 6ix, Toronto's largest summer hackathon, for developing ReadRight, a project to aid students with dyslexia.
                     </p>

@@ -5,7 +5,6 @@ import { styles } from '../styles';
 //import Model from './Model'
 import {motion, useAnimation, useTransform, useScroll} from 'framer-motion';
 import animebg from '../assets/animebg.png';
-import animebgtrees from '../assets/animebgtrees.png';
 import AnimatedText from './AnimatedText';
 import { FaArrowDown } from 'react-icons/fa';
 const ThreeDim = () => {
