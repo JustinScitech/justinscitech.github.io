@@ -38,7 +38,7 @@ const Awards = () => {
                 >
                     <h3 className="vertical-timeline-element-title">Hack the North Winner</h3>
                     <p>
-                        Won two award categories for Hack The North, Canada's hackathon. We developed DAG, a project to aid ML developers with getting datasets via crowdsourcing.
+                        Won two award categories for Hack The North, Canada's largest hackathon. We developed DAG, a project to aid ML developers with getting datasets via crowdsourcing.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
