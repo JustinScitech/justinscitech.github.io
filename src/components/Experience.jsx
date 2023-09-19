@@ -53,7 +53,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="bg-primary min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center items-center relative lg:-top-20">
       <h1 className="text-center text-6xl font-bold text-white">
         Places I've
         <span> </span>
@@ -89,15 +89,15 @@ const Experience = () => {
                   align="center"
                   {...bounce}
                 >
-                  <li
+                  <button
                     className={`mb-2 px-2 py-1 cursor-pointer flex justify-start rounded hover:bg-black ${
-                      item === selectedTab ? "bg-black" : "bg-transparent"
+                      item.title === selectedTab.title ? "bg-black" : "bg-transparent"
                     }`}
                     onClick={() => setSelectedTab(item)}
                   >
                     <div className="flex items-center">
                       <span className="mr-2">{item.icon}</span>
-                      <span>{item.label}</span>
+                      <span className = "break-all sm:break-normal">{item.label}</span>
                     </div>
                     {item === selectedTab ? (
                       <motion.div
@@ -105,7 +105,7 @@ const Experience = () => {
                         layoutId="underline"
                       />
                     ) : null}
-                  </li>
+                  </button>
                 </motion.div>
               ))}
             </ul>
@@ -113,7 +113,7 @@ const Experience = () => {
 
           <div className="flex-grow mt-[-8]">
 
-              <motion.div
+              <motion.div className=""
                 key={selectedTab ? selectedTab.label : "empty"}
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

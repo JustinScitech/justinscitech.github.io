@@ -6,6 +6,7 @@ import justin from '../assets/justin.jpg';
 import { FaLinkedinIn , FaGithub, FaYoutube} from "react-icons/fa"
 import { useSpring, animated } from 'react-spring';
 import {motion} from 'framer-motion';
+import AnimatedText from "./AnimatedText";
 function About() {
   const cards = [
     { name: "Web Development" },
@@ -42,6 +43,7 @@ const bounce = {
 >
 
           <h1 className="text-6xl pt-20 font-bold text-white">
+            
             A little bit
             <span> </span>
             <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent z-0">
@@ -131,7 +133,7 @@ const bounce = {
           </motion.div>
         </div>
         
-        <div className="flex-shrink-0 w-2/6">
+        <div className="flex-shrink-0 w-4/6 sm:w-2/6 pt-4 sm:pt-0">
           <animated.img style={styles} className="w-full h-auto object-cover project-img-rounded" src={justin} alt="Justin" />
         </div>
         

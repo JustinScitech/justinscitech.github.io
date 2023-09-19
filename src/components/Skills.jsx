@@ -44,9 +44,12 @@ const Skills = () => {
 
       return (
         <>
-            <section>
-              <motion.div className = "sm:pt-20 lg:pt-0" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-                <h1 className="pt-20 text-6xl font-bold text-white text-center">
+        <div className='p-20 sm:p-0'></div>
+        <div className='p-20 sm:p-0'></div>
+        <div className='p-20 sm:p-0'></div>
+            <section className= "p-20 sm:p-0">
+              <motion.div className = "pt-20 lg:pt-0" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+                <h1 className="pt-20 sm:pt-0 text-6xl font-bold text-white text-center">
                   My
                   <span> </span>
                   <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
@@ -69,7 +72,7 @@ const Skills = () => {
               </motion.div>
             </section>
     
-            <section>
+            <section className='mb-[-3]'>
                 <div className="sm:pt-20 lg:pt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 justify-items-center bg-primary">
                     {[git, mongodb, nodejs, reactjs, html, css].map((src, i) => (
                         <motion.div

@@ -41,8 +41,8 @@ const Projects = () => {
       };
 
     return (
-        <Element name="projects">
-            <h1 className="sm:pt-10 lg:pt-0 text-6xl font-bold text-white text-center">
+        <Element name="projects" className='relative lg:-top-20'>
+            <h1 className="sm:pt-10 lg:pt-0 text-6xl font-bold text-white text-center ">
                 See some of my
                 <span> </span>
                 <span className="gradient bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
