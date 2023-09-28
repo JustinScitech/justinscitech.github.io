@@ -82,7 +82,7 @@ const Navbar = () => {
                 
                 className={`${active === link.title
                   ? "text-secondary"
-                  : "text-tertiary"
+                  : "text-secondary"
                   } font-poppins text-base sm:text-lg font-medium cursor-pointer`}
               >
                 

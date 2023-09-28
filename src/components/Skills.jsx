@@ -44,9 +44,9 @@ const Skills = () => {
 
       return (
         <>
-        <div className='p-20 sm:p-0'></div>
-        <div className='p-20 sm:p-0'></div>
-        <div className='p-20 sm:p-0'></div>
+        <div className='p-20 lg:p-0 sm:p-0 sm:pt-20'></div>
+        <div className='p-20 lg:p-0 sm:p-0'></div>
+        <div className='p-20 lg:p-0 sm:p-0'></div>
             <section className= "p-20 sm:p-0">
               <motion.div className = "pt-20 lg:pt-0" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 <h1 className="pt-20 sm:pt-0 text-6xl font-bold text-white text-center">

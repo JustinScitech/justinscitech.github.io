@@ -134,7 +134,18 @@ const bounce = {
         </div>
         
         <div className="flex-shrink-0 w-4/6 sm:w-2/6 pt-4 sm:pt-0">
+        <motion.div
+                    m={4} 
+                    p={4} 
+                    borderRadius="lg" 
+                    overflow="hidden" 
+                    boxShadow="lg"
+                    initial="hidden"
+                    animate="visible"
+                    align="center"
+                    {...bounce}>
           <animated.img style={styles} className="w-full h-auto object-cover project-img-rounded" src={justin} alt="Justin" />
+          </motion.div>
         </div>
         
       </section>
