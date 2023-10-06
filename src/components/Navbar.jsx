@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
+import resume from '../assets/JustinResume.pdf';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -55,6 +56,39 @@ const Navbar = () => {
           </li>
           </motion.div>
         ))}
+        {/* <motion.div
+          borderRadius="lg" 
+          overflow="hidden" 
+          boxShadow="lg"
+          initial="hidden"
+          animate="visible"
+          align="center"
+          {...bounce}>
+              
+          <li
+            
+            className={`${active === "Resume"
+              ? "text-secondary"
+              : "text-white"
+              } hover:text-secondary text-lg sm:text-xl font-medium cursor-pointer`}
+            onClick={() => setActive("Resume")}
+          >
+         
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            > <a href={resume}
+            target="_blank"
+            className="gradient bg-gradient-to-r from-blue-500 to-blue-700 rounded-full text-white inline-block text-center py-2 px-4 transition-transform duration-200">
+          
+              {"Resume"}</a>
+            </Link>
+            
+          </li>
+          </motion.div> */}
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
