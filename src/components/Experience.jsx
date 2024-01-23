@@ -4,24 +4,33 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaShip, FaGamepad, FaHospital, FaUser } from "react-icons/fa";
+import { FaShip, FaGamepad, FaHospital, FaUser, FaChartBar } from "react-icons/fa";
 import { motion} from "framer-motion";
 
 const Experience = () => {
   const experienceData = [
     {
+      label: "SPS Commerce",
+      date: "Jan 2024 - April 2024",
+      title: "Software Engineer Intern (Backend Team)",
+      link: "https://www.spscommerce.com/",
+      icon: <FaChartBar />,
+      description:
+        "Engineered background processing services on the company analytics platform using ASP.NET Core to automate extraction and retrieval of retailer (Amazon, Sketchers, & Walmart) data from SQL Server DBs.",
+    },
+    {
       label: "BCS Automation",
-      date: "May 2023 - present",
-      title: "VR Software Developer",
+      date: "May 2023 - Aug. 2023",
+      title: "Software Developer Intern (Virtual Reality Team)",
       link: "https://ca.linkedin.com/company/bcs-automation-ltd",
       icon: <FaShip />,
       description:
-        "Developed frontend (Lua, VR) and backend (ASP.NET CORE, RESTful APIs, sockets) for Canada's new HoloShip platform aimed at making a digital twin for the OOSV.",
+        "Developed frontend interfaces (Lua, VR) and communication protocals via RESTful APIs (ASP.NET CORE, RESTful APIs, sockets) for Canada's new HoloShip platform aimed at making a digital twin for the OOSV.",
     },
     {
       label: "Legion Studios",
       date: "Nov 2020 - Jun 2022",
-      title: "Software Developer Game Systems",
+      title: "Software Developer (Game Systems)",
       link: "https://www.linkedin.com/company/legionstudios/",
       icon: <FaGamepad />,
       description:
@@ -30,21 +39,12 @@ const Experience = () => {
     {
       label: "HealthSmart.ai",
       date: "Jun 2021 - Aug 2021",
-      title: "Software Developer Intern",
+      title: "Software Engineer Intern (Frontend Team)",
       link: "https://healthsmart.ai",
       icon: <FaHospital />,
       description:
-        "Developed a secure EMR integration prototype, built 3D patient visualization pages using React & Three.js, designed wireframes, info cards, & icons.",
+        "Developed a secure medical record integration prototype, built 3D patient visualization pages using React & Three.js, designed wireframes, info cards, & icons.",
     },
-    {
-        label: "LighthouseHacks.ca",
-        date: "Sep 2020 - Jun 2021",
-        title: "Lead Organizer",
-        link: "https://lighthousehacks.ca",
-        icon: <FaUser />,
-        description:
-          "Led a team of 10 executives to organize, promote, and launch an international hackathon with 250+ participants from 10 countries and $40,000+ in sponsorship prizes.",
-      },
   ];
 
   const [selectedTab, setSelectedTab] = useState(experienceData[0]);
