@@ -11,6 +11,15 @@ const Experience = () => {
   const experienceData = [
     {
       label: "SPS Commerce",
+      date: "Sept 2024 - Dec 2024",
+      title: "Software Engineer Intern (Data Engine Team)",
+      link: "https://www.spscommerce.com/",
+      icon: <FaChartBar />,
+      description:
+        "Doing full stack dev for the data engine that runs the entire SPS Commerce platform for data insights and analysis.",
+    },
+    {
+      label: "SPS Commerce",
       date: "Jan 2024 - April 2024",
       title: "Software Engineer Intern (Backend Team)",
       link: "https://www.spscommerce.com/",
