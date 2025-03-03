@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css';
 import { Element } from 'react-scroll';
-import resume from '../assets/JustinResume.pdf';
+// import resume from '../assets/JustinResume.pdf';
 import justin from '../assets/justin.jpg';
 import { FaLinkedinIn , FaGithub, FaYoutube} from "react-icons/fa"
 import { useSpring, animated } from 'react-spring';
@@ -122,14 +122,14 @@ const bounce = {
   initial={{ opacity: 0 }}
   whileInView={{ opacity: 1 }}
 >
-          <h1 className="pt-8 text-2xl font-light text-white text-left">
+          {/* <h1 className="pt-8 text-2xl font-light text-white text-left">
             <a href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="gradient bg-gradient-to-r from-blue-500 to-blue-700 rounded-full text-white inline-block text-center py-4 px-4 hover:translate-y-[-8px] transition-transform duration-200">
               See my resume
             </a>
-          </h1>
+          </h1> */}
           </motion.div>
         </div>
         

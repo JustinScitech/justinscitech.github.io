@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
-import resume from '../assets/JustinResume.pdf';
+// import resume from '../assets/JustinResume.pdf';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
